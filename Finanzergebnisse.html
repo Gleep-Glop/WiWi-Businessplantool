@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<header>
+  <nav class="headNav">
+      <a href="Dashboard.html">Dashboard</a>
+      <a href="UmsatzKunden.html">Umsatz & Kunden</a>
+      <a href="KostenInvestitionen.html">Kosten & Investionen</a>
+      <a href="Finanzergebnisse.html">Finanzergebnisse</a>
+  </nav>
+</header>
+
+<section>
+    <table border="1">
+        <tr>
+            <th>Monat</th>
+            <th>Umsatz</th>
+            <th>Variable Kosten</th>
+            <th>DB</th>
+            <th>Fixkosten</th>
+            <th>EBITDA</th>
+            <th>AfA</th>
+            <th>EBIT</th>
+            <th>Zinsen/St.</th>
+        </tr>
+        <tr>
+            <td>1<!--flexibel gefüllt--></td>
+            <td>0.00<!--flexibel gefüllt--></td>
+            <td>0.00<!--flexibel gefüllt--></td>
+            <td>0.00<!--flexibel gefüllt--></td>
+            <td>0.00<!--flexibel gefüllt--></td>
+            <td>0.00<!--flexibel gefüllt--></td>
+            <td>0.00<!--flexibel gefüllt--></td>
+            <td>0.00<!--flexibel gefüllt--></td>
+            <td>0.00<!--flexibel gefüllt--></td>
+        </tr>
+    </table>
+    <p><b>Berechnung:</b> Umsatz - Variable Kosten = Deckungsbeitrag (DB) | DB - Fixkosten = EBITDA | EBITDA - Abschreibung (AfA) = EBIT | EBIT - Zinsen/Steuern = Periodenergebnis </p>
+</section>
+
+<section>
+    <p>Liquiditätsplanung</p>
+    <table border="1">
+        <tr>
+            <th>Monat</th>
+            <th>Anfangsbestand</th>
+            <th>Einzahlungen</th>
+            <th>Auszahlungen</th>
+            <th>Endbestand</th>
+        </tr>
+        <tr>
+            <td>1<!--flexibel gefüllt--></td>
+            <td>0.00<!--flexibel gefüllt--></td>
+            <td>0.00<!--flexibel gefüllt--></td>
+            <td>0.00<!--flexibel gefüllt--></td>
+            <td>0.00<!--flexibel gefüllt--></td>
+        </tr>
+    </table>
+
+    <p> ---Grafik?--- </p>
+
+</section>
+
+<section>
+    <p>Kapital & Finanzierung</p>
+    <div>
+        <p>Finanzierungsquellen</p>
+        <Table border="1">
+            <tr>
+                <td>Quelle</td>
+                <td>Betrag</td>
+                <td>Anteil</td>
+            </tr>
+            <tr>
+                <td><!--Vorlage--></td>
+                <td>0.00<!--Vorlage--></td>
+                <td>0.0<!--Vorlage--></td>
+            </tr>
+            <tr>
+                <td>Gesamt</td>
+                <td>0.00</td>
+                <td>0.0</td>
+            </tr>
+        </Table>
+        <button type="button" id="add">+ Finanzierungsquelle</button>
+    </div>
+</section>
+
+<section>
+    <div>
+        <p>Kapitalbedarfsberechnung</p>
+        <Table border="1">
+            <tr>
+                <td>Quelle</td>
+                <td>Betrag</td>
+                <td>Anteil</td>
+            </tr>
+            <tr>
+                <td><!--Vorlage--></td>
+                <td>0.00<!--Vorlage--></td>
+                <td>0.00<!--Vorlage--></td>
+            </tr>
+            <tr>
+                <td>Gesamter Kapitalbedarf</td>
+                <td>0.00<!--Ergebnis--></td>
+                <td>0.00<!--Ergebnis--></td>
+            </tr>
+        </Table>
+        <button type="button" id="add">+ Finanzierungsquelle</button>
+    </div>
+</section>
+
+<section>
+    <p>Break-Even-Analyse</p>
+    <table border="1">
+        <tr>
+            <th>Kunden</th>
+            <th>Umsatz</th>
+            <th>Fixkosten</th>
+            <th>Variable Kosten</th>
+            <th>Deckungsbeitrag</th>
+            <th>Ergebnis</th>
+        </tr>
+        <tr>
+            <td>0<!--flexibel gefüllt--></td>
+            <td>0.00<!--flexibel gefüllt--></td>
+            <td>0.00<!--flexibel gefüllt--></td>
+            <td>0.00<!--flexibel gefüllt--></td>
+            <td>0.00<!--flexibel gefüllt--></td>
+            <td>0.00<!--flexibel gefüllt--></td>
+        </tr>
+    </table>
+    <div>
+        <p><b>Break-Even-Point erreicht bei:</b><!--Kunden flexible Antwort--></p>
+        <p>Bei durchschnittlich € <!--Wert--> ARPU entspricht dies ca. € <!--berechnung--> monatlichem Umsatz</p>
+    </div>
+
+    <p><b>Berechnungsweg:</b>Break-Even = Fixkosten ÷ Deckungsbeitrag pro Kunde</p>
+</section>
+
+<section id="speichern">
+    <button type="button">Speichern</button>
+</section>
+
+</body>
+</html>

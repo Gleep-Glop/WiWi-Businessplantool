@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<header>
+    <nav class="headNav">
+        <a href="Dashboard.html">Dashboard</a>
+        <a href="UmsatzKunden.html">Umsatz & Kunden</a>
+        <a href="KostenInvestitionen.html">Kosten & Investionen</a>
+        <a href="Finanzergebnisse.html">Finanzergebnisse</a>
+    </nav>
+</header>
+<section id="preismodelleProduktliste">
+    <p>Preismodelle / Produktliste</p>
+    <div id="listenelementProduktVorlage">
+        <input type="text" value="Name"><br>
+        <input type="text" value="Preis"><br> <!-- soll in Formeln weiter verwendbar sein-->
+        <input type="text" value="Beschreibung"><br>
+        <input type="text" value="Zusatz">
+    </div>
+    <button type="button" id="add">+ neues Produkt hinzufügen</button>
+</section>
+<section>
+    <p>Akquise & Conversion</p>
+        <div>
+            <Label>monatliche Besucher / Leads<br><input type="number" value="0"></Label><br>
+            <Label>Wachstumsrate (% pro Monat)<br><input type="number" value="0.0">%</Label><br>
+            <Label>Conversion Rate(%)<br><input type="number" value="0.0">%</Label><br>
+            <Label>Neukunden pro Monat (berechnet)<br><input type="number" value="0"></Label>
+        </div>
+    <div id="Information">
+        <p><b>Berechnung:</b> Besucher x Conversion = Neukunden</p>
+    </div>
+</section>
+<section>
+    <p><b>Kundenbindung  & Churn</b></p>
+    <table border="1">
+        <tr>
+            <th>Monat</th>
+            <th>Kunden (start)</th>
+            <th>Churn Rate (%)</th>
+            <th>verbleibend</th>
+            <th>Wiederkaufrate (%)</th>
+        </tr>
+        <tr>
+            <td>1<!--flexible Tabelle reaktiv - berechnet automatisch die Lücken--></td>
+            <td>0</td>
+            <td>0.0</td>
+            <td>0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>2<!--flexible Tabelle reaktiv - berechnet automatisch die Lücken--></td>
+            <td>0</td>
+            <td>0.0</td>
+            <td>0</td>
+            <td>0.0</td>
+        </tr>
+    </table>
+</section>
+<section>
+    <p><b>Saisonale Schwankungen</b></p>
+    <table border="1">
+        <tr><td>Monat</td><td>Saisonaler Faktor</td><td>Erwarteter Umsatz</td></tr>
+        <tr>
+            <td>1<!--flexible Tabelle reaktiv - berechnet automatisch die Lücken--></td>
+            <td>0.0</td>
+            <td>0.00</td>
+        </tr>
+        <tr>
+            <td>2<!--flexible Tabelle reaktiv - berechnet automatisch die Lücken--></td>
+            <td>0.0</td>
+            <td>0.00</td>
+        </tr>
+    </table>
+    <p><b>Hinweis:</b> Grüne Monate zeigen Hochsaison (Faktor > 1.1), gelbe Monate niedrige Aktivität (Faktor < 0.9)</p>
+</section>
+
+<section id="speichern">
+    <button type="button">Speichern</button>
+</section>
+
+</body>
+</html>
