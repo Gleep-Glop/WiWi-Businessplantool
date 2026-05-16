@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<header>
+    <nav class="headNav">
+        <a href="Dashboard.html">Dashboard</a>
+        <a href="UmsatzKunden.html">Umsatz & Kunden</a>
+        <a href="KostenInvestitionen.html">Kosten & Investionen</a>
+        <a href="Finanzergebnisse.html">Finanzergebnisse</a>
+    </nav>
+</header>
+<section>
+    <p>Personalkosten-Rechner</p>
+    <table border="1">
+        <tr>
+            <th>Position</th>
+            <th>Brutto</th>
+            <th>KV <input type="number" id="prozentsatz">%</th>
+            <th>RV <input type="number" id="prozentsatz">%</th>
+            <th>AV <input type="number" id="prozentsatz">%</th>
+            <th>U1 - U3</th><!--Wie baut man die denn ein? Steuerklasse I - VI einbauen?-->
+            <th>Gesamt</th>
+        </tr>
+        <tr>
+            <td><!--flexible Tabelle reaktiv - berechnet automatisch die Lücken--></td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+        </tr>
+        <tr>
+            <td colspan="6">Gesamte Personalkosten (monatlich)</td>
+            <td>Ergebnis</td>
+        </tr>
+</section>
+
+<section>
+    <p>operative Kosten (OPEX)</p>
+    <div>
+        <p>Fixkosten</p>
+        <table border="1">
+            <tr>
+                <td>Kategorie</td>
+                <td>Monatlich</td>
+                <td>Jährlich</td>
+            </tr>
+            <tr>
+                <td><!--Kostenquelle Vorlage--></td>
+                <td>0.00<!--Kostenquelle Vorlage--></td>
+                <td>0.00<!--Kostenquelle Vorlage--></td>
+            </tr>
+            <tr>
+                <td>Summe Fixkosten</td>
+                <td>0.00<!--Ergebnis Monatlich--></td>
+                <td>0.00<!--Ergebnis Jährlich--></td>
+            </tr>
+        </table>
+        <button type="button" id="addfixkosten">+ Kostenquelle hinzufügen</button>
+    </div>
+    <div>
+        <p>Variable Kosten</p>
+        <table border="1">
+            <tr>
+                <td>Kategorie</td>
+                <td>pro Einheit</td>
+                <td>Einheiten</td>
+                <td>Gesamt(Monat)</td>
+            </tr>
+            <tr>
+                <td><!--Kostenquelle Vorlage--></td>
+                <td>0.00<!--Kostenquelle Vorlage--></td>
+                <td>0<!--Kostenquelle Vorlage--></td>
+                <td>0.00<!--Kostenquelle Vorlage--></td>
+            </tr>
+            <tr>
+                <td colspan="3">Summe Variable Kosten</td>
+                <td><!--Ergebnis Gesamt Monatlich--></td>
+            </tr>
+        </table>
+        <button type="button" id="addvariablekosten">+ Kostenquelle hinzufügen</button>
+    </div>
+</section>
+
+<section>
+    <p>Investitionen & Abschreibungen (AfA)</p>
+    <div>
+        <table border="1">
+            <tr>
+                <td>Bezeichnung</td>
+                <td>Art</td>
+                <td>Investitionssumme</td>
+                <td>Nutzungsdauer</td>
+                <td>AfA(monatlich)</td>
+            </tr>
+            <tr>
+                <td><!--AfA Vorlage--></td>
+                <td><!--AfA Vorlage--></td>
+                <td>0.00<!--AfA Vorlage--></td>
+                <td>0<!--AfA Vorlage--></td>
+                <td>0.00<!--AfA Vorlage--></td>
+            </tr>
+            <tr>
+                <td colspan="4">Gesamte monatliche Abschreibung (in GuV)</td>
+                <td><!--Ergebnis AfA Monatlich--></td>
+            </tr>
+        </table>
+        <button type="button" id="addvariablekosten">+ Kostenquelle hinzufügen</button>
+        <p><b>Hinweis:</b> Die Investitionskosten werden automatisch über die Nutzungsdauer verteilt und als monatlicher Aufwand in der Gewinn- und Verlustrechnung (GuV) berücksichtigt.</p>
+    </div>
+</section>
+
+<section>
+    <p>Monatliche Kostenübersicht</p>
+    <table>
+        <tr>
+            <td>+ Personalkosten</td>
+            <td>0.00</td>
+        </tr>
+        <tr>
+            <td>+ Fixkosten</td>
+            <td>0.00</td>
+        </tr>
+        <tr>
+            <td>+ Variable Kosten</td>
+            <td>0.00</td>
+        </tr>
+        <tr>
+            <td>+ Abschreibungen (AfA)</td>
+            <td>0.00</td>
+        </tr>
+        <tr><td colspan="2">-----------------------------------------</td></tr>
+        <tr>
+            <td>Gesamtkosten (monatlich)</td>
+            <td>0.00</td>
+        </tr>
+    </table>
+</section>
+
+<section id="speichern">
+    <button type="button">Speichern</button>
+</section>
+
+</body>
+</html>
